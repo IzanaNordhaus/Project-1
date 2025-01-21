@@ -1,0 +1,60 @@
+#pumplabel {
+    display: flex;                /* Enables flexbox layout */
+    position: absolute;
+    top: 2px;
+    right: -200px;
+    width: 100%;
+    height: 110vh;                
+
+}
+
+/* Control the image size */
+#pumplabel img {
+    object-fit: contain; /* Ensures the aspect ratio of the image is maintained */
+    width: 200%;         /* Makes the image 1.5 times bigger than its container */
+    height: auto;        /* Maintain aspect ratio */
+}
+
+#pumpingredients {
+    position: absolute;
+    top: 600px;
+    left: 50px;
+}
+
+#pumpingredients img {
+    object-fit: contain;
+    width: 80%;
+}
+
+
+#singlepump {
+    position: absolute;
+    top: 2200px;
+    left: 250px;
+    rotate: 10deg;
+    z-index: 2; /* Higher z-index */
+}
+#singlepump img {
+    object-fit: contain;
+    width: 70%;}
+
+    #singlepump img {
+        transition: transform 0.3s ease; /* Smooth transition */
+    }
+    
+    #singlepump img:hover {
+        transform: rotate(-10deg); /* Rotate 10 degrees */
+    }
+
+
+#pumpinstructions {
+    position: absolute;
+    top: 1000px;
+    right: -100px;
+    z-index: 1; /* Higher z-index */
+}
+
+#pumpinstructions img {
+    object-fit: contain;
+    width: 80%;
+}
